@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tech Spark | Coding Competition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a href="#about">About</a>
+        <a href="#register">Register</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#sponsors">Sponsors</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-content">
+            <h1>Tech Spark</h1>
+            <p>Fueling the Future of Innovation</p>
+            <a href="#register" class="btn-primary"><span>Register Now</span></a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Tech Spark</h2>
+        <p>Tech Spark is an annual coding competition that brings together developers from around the world to tackle real-world challenges and showcase their talent.</p>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline">
+        <h2>Event Timeline</h2>
+        <ul>
+            <li><strong>Registration Deadline:</strong> December 15, 2024</li>
+            <li><strong>Event Start:</strong> December 20, 2024</li>
+            <li><strong>Finals:</strong> December 31, 2024</li>
+        </ul>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="register">
+        <h2>Register for Tech Spark</h2>
+        <form id="registration-form" action="register.php" method="POST">
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
+            <input type="email" id="email" name="email" placeholder="Email Address" required>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+            <select id="category" name="category" required>
+                <option value="">Select Category</option>
+                <option value="Junior">Junior Developer</option>
+                <option value="Senior">Senior Developer</option>
+            </select><br>
+            <button type="submit" class="btn-submit">Submit</button>
+        </form>
+
+    </section>
+
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="sponsors">
+        <h2>Our Sponsors</h2>
+        <div class="sponsor-logos">
+            <img src="download.jpeg" alt="Google">
+            <img src=" amazon.png " alt="Amazon ">
+            <img src="micro.png " alt="Microsoft ">
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <div id="back-to-top " onclick="scrollToTop() ">↑</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tech Spark. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Body */
+
+body {
+    background-color: #121212;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Navigation */
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navbar a {
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#navbar a:hover {
+    color: #00ffcc;
+}
+
+
+/* Hero Section */
+
+.hero {
+    background: linear-gradient(135deg, #ff0099, #00ffcc);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    animation: glowing 1.5s infinite alternate;
+}
+
+.hero p {
+    font-size: 1.6rem;
+    margin-top: 15px;
+}
+
+.hero .btn-primary {
+    background: transparent;
+    color: white;
+    border: 2px solid #00ffcc;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.hero .btn-primary:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+
+/* About Section */
+
+.about {
+    padding: 80px 20px;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
+
+.about p {
+    font-size: 1.4rem;
+    color: #ddd;
+}
+
+
+/* Timeline Section */
+
+.timeline {
+    padding: 60px 20px;
+    background-color: #212121;
+    text-align: center;
+}
+
+.timeline h2 {
+    font-size: 2.8rem;
+    letter-spacing: 3px;
+}
+
+.timeline ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.timeline li {
+    font-size: 1.4rem;
+    margin: 10px 0;
+}
+
+
+/* Register Section */
+
+.register {
+    padding: 60px 20px;
+    background-color: #333;
+    text-align: center;
+}
+
+.register h2 {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.register input,
+.register select {
+    width: 70%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #444;
+    border: 1px solid #00ffcc;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.register input:focus,
+.register select:focus {
+    outline: none;
+    border-color: #ff0099;
+}
+
+
+/* Sponsors Section */
+
+.sponsors {
+    padding: 80px 20px;
+    background-color: #212121;
+    text-align: center;
+}
+
+.sponsors h2 {
+    font-size: 3rem;
+    color: #ff0099;
+    margin-bottom: 30px;
+}
+
+.sponsor-logos img {
+    width: 150px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.sponsor-logos img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Back to Top Button */
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00ffcc;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+#back-to-top:hover {
+    background-color: #ff0099;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.btn-submit {
+    font-size: 1.5rem;
+    background: linear-gradient(45deg, #ff0099, #00ffcc);
+    padding: 18px 40px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(255, 0, 153, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-submit:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.8);
+}
